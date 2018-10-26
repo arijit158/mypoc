@@ -1,0 +1,32 @@
+
+	<div class="container">
+		<div class="well">
+        <form id="userlist">
+		<legend>Welcome</legend>
+		<div class="span2 pull-right">
+        <a ng-click="">Add Task</a>
+        </div>
+s		
+		<div class="control-group">
+	      <table class="table table-strippd table-bordered table-hover table-collapsed">
+	      <th>
+	      	<tr>Name</tr>
+	      	<tr>Company</tr>
+	      	<tr>Client</tr>
+	      	<tr>Edit</tr>
+	      	<tr>Delete</tr>
+	      </th>
+	      <tbody>
+	      	<tr ng-repeat="item in listData">
+	      		<td>{{item.username}}</td>
+	      		<td>{{item.usercompany}}</td>
+	      		<td>{{item.clientname}}</td>
+	      		<td><button type="submit">Edit</button></td>
+	      		<td><button type="submit" ng-click="">Delete</button></td>
+	      	</tr>
+	      </tbody>
+        </table> 
+		</div>
+	  </form>
+		</div>
+</div>
